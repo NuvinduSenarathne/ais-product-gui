@@ -1,0 +1,60 @@
+.sidebarButtonContainer {
+    width: 100%;
+}
+
+.sidebarButton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    background-color: transparent;
+    color: #898FA2;
+    border: none;
+    padding: 8px 12px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.sidebarButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+}
+
+.arrow {
+    transition: transform 0.3s ease-in-out;
+    margin-left: auto;
+}
+
+.arrow.rotated {
+    transform: rotate(90deg);
+}
+
+.subMenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    width: 100%;
+    padding-left: 34px;
+}
+
+.subMenu.open {
+    max-height: 200px;
+}
+
+.subButton {
+    display: block;
+    background: none;
+    color: white;
+    border: none;
+    padding: 5px 0;
+    font-size: 13px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.subButton:hover {
+    color: #D9AF65;
+}
