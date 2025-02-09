@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.loginContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(38, 2, 97, 0.92);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 1s ease; 
+    position: relative;
+}
+
+.formWrapper {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.formContainer {
+    width: 500px;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.formContainer form {
+    width: 80%;
+}
+
+.formContainer h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: "Roboto Slab", serif;
+}
+
+.companyLogo {
+    width: 200px;
+    height: 200px;
+}
+
+.errorText {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: red;
+    display: block;
+    font-size: 12px;
+}
+
+.forgetPassword {
+    color: #337ab7;
+    font-size: 14px;
+    float: right;
+    font-family: "Ubuntu", serif;
+    cursor: pointer;
+}
+
+.forgetPassword:hover {
+    text-decoration: underline;
+}
+
+.formContainer button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: rgb(220, 20, 60);
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.formContainer button:hover {
+    background-color: rgba(220, 20, 60, 0.8);
+}
+
+@media only screen and (max-width: 1300px), (max-height: 600px) {
+    
+    .formContainer {
+        width: 80%;
+        height: auto;
+        padding: 10% 0;
+    }
+    
+    .formContainer form {
+        width: 80%;
+    }
+    
+    .formContainer h3 {
+        margin-bottom: 24px;
+        font-size: 24px;
+    }
+
+    .companyLogo {
+        width: 160px;
+        height: 160px;
+    }    
+    
+    .formContainer button {
+        height: 32px;
+        margin-top: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 890px) {
+
+    .formWrapper {
+        width: 100%;
+    }
+
+    .formContainer {
+        width: 70%;
+        padding: 10% 0;
+    }
+
+    .companyLogo {
+        width: 140px;
+        height: 140px;
+    }    
+    
+}
+
+@media only screen and (max-width: 500px), (max-height: 400px) {
+
+    .formWrapper {
+        width: 100%;
+    }
+
+    .formContainer {
+        width: 100%;
+        overflow-y: auto;
+        min-height: 100vh;
+        padding: 40px 0px;
+    }
+
+}
