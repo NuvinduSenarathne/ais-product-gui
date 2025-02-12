@@ -15,11 +15,15 @@ const SidebarButton: React.FC<SidebarButtonProps> = ({ label, iconSrc, hasSubMen
   return (
     <div className={styles.sidebarButtonContainer}>
       <button className={styles.sidebarButton} onClick={() => hasSubMenu && setIsExpanded(!isExpanded)}>
-        <Image src={iconSrc} alt={label} width={26} height={26} />
+        <div className={styles.sideButtonLogo}>
+          <Image src={iconSrc} alt="icon" fill />
+        </div>
         <span>{label}</span>
         {hasSubMenu && (
           <span className={`${styles.arrow} ${isExpanded ? styles.rotated : ""}`}>
-            <Image src="/assets/icon/arrow.png" alt="Arrow" width={20} height={20} />
+            <div className={styles.arrowLogo}>
+            <Image src="/assets/icon/arrow.png" alt="icon" fill />
+            </div>
           </span>
         )}
       </button>
