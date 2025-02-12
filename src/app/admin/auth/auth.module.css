@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-
 .loginContainer {
     width: 100%;
     height: 100vh;
@@ -25,7 +23,7 @@
 .formContainer {
     width: 500px;
     height: 650px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.96);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -33,6 +31,7 @@
     justify-content: center;
     position: relative;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .formContainer form {
@@ -46,9 +45,10 @@
     font-family: "Roboto Slab", serif;
 }
 
-.companyLogo {
+.formLogoContainer {
     width: 200px;
     height: 200px;
+    position: relative;
 }
 
 .errorText {
@@ -76,7 +76,7 @@
     height: 40px;
     border: none;
     background-color: rgb(220, 20, 60);
-    border-radius: 5px;
+    border-radius: 50px;
     color: #FFFFFF;
     margin-top: 40px;
     transition: 0.5s ease;
@@ -87,8 +87,33 @@
     background-color: rgba(220, 20, 60, 0.8);
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .loginContainer {
+        background-color: rgba(0, 0, 0, 0.92);
+    }
+
+    .formContainer {
+        background-color: rgba(34, 34, 34, 0.9);
+        color: gainsboro;
+    }
+
+    .overlay {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 1300px), (max-height: 600px) {
-    
     .formContainer {
         width: 80%;
         height: auto;
@@ -112,12 +137,10 @@
     .formContainer button {
         height: 32px;
         margin-top: 20px;
-    }
-    
+    }    
 }
 
 @media only screen and (max-width: 890px) {
-
     .formWrapper {
         width: 100%;
     }
@@ -131,11 +154,9 @@
         width: 140px;
         height: 140px;
     }    
-    
 }
 
 @media only screen and (max-width: 500px), (max-height: 400px) {
-
     .formWrapper {
         width: 100%;
     }
@@ -146,5 +167,4 @@
         min-height: 100vh;
         padding: 40px 0px;
     }
-
 }

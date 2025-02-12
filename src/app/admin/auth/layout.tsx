@@ -25,11 +25,14 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
     <div className={styles.loginContainer} style={{ backgroundImage: `url(${images[imageIndex].src})` }}>
       <div className={styles.formWrapper}>
         <div className={styles.formContainer}>
-          <Image src="/assets/logo/grand_amanee.png" height={200} width={200} alt="Company Logo" className={styles.companyLogo} />
+          <div className={styles.formLogoContainer}>
+            <Image src="/assets/logo/grand_amanee.png" fill alt="Company Logo" />
+          </div>
           <h3>Control Panel</h3>
           {children}
         </div>
       </div>
+      <div className={styles.overlay}></div>
     </div>
   );
 }

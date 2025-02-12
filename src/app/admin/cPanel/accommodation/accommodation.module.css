@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.addRoomContainer {
+    padding: 20px;
+}
+
+.addRoomContainer h2 {
+    font-family: "Oswald", serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+  
+.mainContainer {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: "ubuntu", serif;
+    justify-content: space-between;
+}
+  
+.leftContainer {
+    width: 30%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rightContainer {
+    width: 70%;
+    padding: 10px;
+}
+  
+.rowContainer {
+    display: flex;
+    width: 100%;
+}
+  
+.halfWidthContainer {
+    width: 50%;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+  
+.fullWidthContainer {
+    width: 100%;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+  
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+  
+.errorText {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+  

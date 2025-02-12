@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.mainHeading {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.sectionContainer {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sectionContainer h3 {
+    display: block;
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: left;
+    font-family: "Merriweather", serif;
+}
+
+.detailsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 80%;
+    gap: 30px;
+    padding: 20px;
+}
+
+.detailItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.detailItem:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 10px;
+    width: 150px;
+    text-align: left;
+    flex-shrink: 0;
+    font-family: "Noto Sans", serif;
+}
+
+.value, .input {
+    flex: 2;
+    text-align: right;
+    font-family: "ubuntu", serif;
+}
+
+.input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Company Logo */
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    grid-column: span 2; /* Make logo span full width */
+}
+
+/* Responsive Behavior */
+@media (max-width: 600px) {
+    .detailsGrid {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
+    }
+}
