@@ -4,92 +4,6 @@
     display: flex;
     height: 100vh;
 }
-  
-.sidebar {
-    background-color: #292F42;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: width 0.3s ease-in-out;
-    overflow: hidden;
-    height: 100vh;
-}
-
-.sidebarClosed {
-    width: 0px;
-}
-  
-.sidebarOpen {
-    width: 280px;
-}
-
-.sidebarHeader {
-    width: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
-.sidebarHeader .imageWrapper {
-    width: 85px;
-    height: 85px;
-    position: relative;
-}
-  
-.sidebarHeader .title {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Roboto Condensed", serif;
-    color: #D9AF65;
-}
-
-.sidebarHeader .subTitle {
-    font-size: 14px;
-    font-weight: bold;
-    font-family: "Roboto Condensed", serif;
-    color: white;
-}
-
-.sidebarBody {
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 10px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    max-height: calc(100vh - 105px);
-}
-
-.sidebarBody .bodyContext {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.sidebarBody .bodyContext .title {
-    color: #898FA2;
-    font-size: 16px;
-    font-family: "Oswald", serif;
-    margin-bottom: 10px;
-}
-
-.sidebarOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    display: none;
-}
-
-.sidebarOverlayActive {
-    display: none;
-}
 
 .cPanel {
     flex-grow: 1;
@@ -98,221 +12,34 @@
     background-color: whitesmoke;
     transition: margin-left 0.3s ease-in-out;
 }
- 
-.cPanelHeader {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    color: black;
-}
 
-.cPanelHeader .start {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 15px;
-}
-  
-.cPanelHeader .middle {
-    width: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cPanelHeader .end {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 15px;
-}
-
-.cPanelHeader .iconWrapper {
-    margin-left: 20px;
-}
-
-.userContainer {
-    width: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.userContainer div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: "Roboto Condensed", serif;
-}
-
-.userImage {
-    border-radius: 50%;
-    border: 2px solid black;
-    margin-right: 10px;
-}
-
-.userNameHolder {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.userRoleHolder {
-    font-size: 12px;
-}
-
-.cPanelBody {
+.cPanel main {
     flex: 1;
     padding: 20px;
     overflow: auto;
     background-color: gainsboro;
 }
 
-/* @media (prefers-color-scheme: dark) {
-    .sidebar {
-        background-color: #212529;
-    }
-     
-    .cPanelHeader {
-        background-color: #292e32;
-        color: white;
-    }
-    
-    .userImage {
-        border: 2px solid white;
-    }
-    
-    .cPanelBody {
+@media (prefers-color-scheme: dark) { 
+    .cPanel main {
         background-color: #1a1d21;
-    }
-} */
-
-@media only screen and (max-width: 1300px), (max-height: 600px) {
-    .sidebar {
-        position: fixed;
-        top: 0;
-        left: -280px;
-        width: 280px;
-        height: 100vh;
-        transition: left 0.3s ease-in-out;
-        z-index: 1000;
-    }
-
-    .sidebarOpen {
-        left: 0;
-    }
-
-    .sidebarClosed {
-        left: -100%;
-    }
-
-    .sidebarHeader {
-        width: 280px;
-        margin-bottom: 10px;
-    }
-
-    .sidebarHeader .imageWrapper  {
-        width: 50px;
-        height: 50px;
-    }
-      
-    .sidebarHeader .title  {
-        font-size: 14px;
-    }
-    
-    .sidebarHeader .subtitle {
-        font-size: 10px;
-    }
-    
-    .sidebarBody {
-        max-height: calc(100vh - 60px);
-    }
-
-    .sidebarBody .bodyContext .title {
-        font-size: 14px;
-    }
-
-    .sidebarOverlay {
-        display: none;
-    }
-
-    .sidebarOverlayActive {
-        display: block;
-    }
-
-    .cPanelHeader .start {
-        padding-left: 10px;
-    }
-    
-    .cPanelHeader .end {
-        padding-right: 10px;
-    }
-
-    .cPanelHeader .iconWrapper {
-        margin-left: 15px;
-    }
-
-    .userContainer {
-        margin-left: 15px;
-    }
-      
-    .userImage {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-    }
-      
-    .userNameHolder {
-        font-size: 14px;
-    }
-    
-    .userRoleHolder {
-        font-size: 10px;
     }
 }
 
+@media only screen and (max-width: 1300px), (max-height: 600px) {
+
+}
+
 @media only screen and (max-width: 890px) {
-    .cPanelBody {
+    .cPanel main {
         padding: 15px;
-    }
-
-    .userNameHolder,
-    .userRoleHolder {
-        display: none;
-    }
-
-    .cPanelHeader {
-        padding: 8px;
-    }
-
-    .cPanelHeader .iconWrapper {
-        margin-left: 10px;
     }
 }
 
 @media only screen and (max-width: 500px), (max-height: 400px) {
-    .sidebar {
-        width: 250px;
-    }
-
-    .sidebarHeader {
-        width: 250px;
-    }
-
-    .sidebarBody {
-        width: 250px;
-    }
-
-    .cPanelBody {
+    .cPanel main {
         padding: 10px;
     }
-
-    .cPanelHeader {
-        padding: 5px;
-    }
 }
+
+    

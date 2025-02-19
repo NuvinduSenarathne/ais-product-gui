@@ -1,0 +1,108 @@
+📌 1. Attendance & Time Tracking
+
+💡 Purpose: Manage employee work hours, shifts, and attendance records.
+📌 Key Features:
+
+    Attendance Overview → Displays attendance records of all employees.
+    Employee Attendance → Individual attendance tracking with check-in/check-out times.
+    Work Hours & Overtime → Tracks overtime, late arrivals, and extra work hours.
+    Shift Management → Assign and manage shift schedules for hotel staff.
+    Automated Alerts → Notifies managers of frequent late arrivals or absenteeism.
+
+📌 2. Awards & Recognition
+
+💡 Purpose: Recognize employee achievements and boost motivation.
+📌 Key Features:
+
+    Add New Award → Define new awards (e.g., Employee of the Month, Best Chef).
+    Manage Awards → Modify or delete existing awards.
+    Employee Achievements → Track individual employee accomplishments over time.
+
+📌 3. Recruitment & Hiring
+
+💡 Purpose: Handle the hiring process from job posting to candidate selection.
+📌 Key Features:
+
+    Add Candidate → Register new applicants with CV uploads.
+    Manage Candidates → View and filter applicants based on qualifications.
+    Shortlisted Candidates → Keep track of shortlisted candidates for interviews.
+    Interview Scheduling → Assign interview slots and notify candidates.
+    Candidate Selection → Approve and onboard selected candidates.
+    Job Openings → Create and publish job vacancies on the system.
+
+📌 4. Departments & Teams
+
+💡 Purpose: Organize employees into structured teams and departments.
+📌 Key Features:
+
+    Add Department → Create new departments (e.g., Housekeeping, Front Desk).
+    Manage Departments → Edit department details and employee assignments.
+    Add Division → Sub-divide departments for better organization.
+    Manage Divisions → Modify division structures within departments.
+
+📌 5. Employee Management
+
+💡 Purpose: Centralized control of employee records and roles.
+📌 Key Features:
+
+    Employee Positions → Define job roles (e.g., Receptionist, Chef, Manager).
+    Add New Employee → Register new hires with personal and job details.
+    Manage Employees → Edit, transfer, or terminate employees.
+    Performance Evaluation → Track employee KPIs and performance reviews.
+    Employee Salary Details → View salary structure, bonuses, and deductions.
+
+📌 6. Leave & Holiday Management
+
+💡 Purpose: Manage employee leave requests and holidays.
+📌 Key Features:
+
+    Weekly Off & Public Holidays → Define weekly off-days and national holidays.
+    Manage Holidays → Update or add new holiday schedules.
+    Leave Types & Policies → Set up leave categories (sick leave, annual leave).
+    Leave Requests & Approvals → Employees apply for leave, and managers approve/reject.
+
+📌 7. Loans & Advances
+
+💡 Purpose: Handle employee financial benefits like salary advances and loans.
+📌 Key Features:
+
+    Grant Loan → Process loan applications for employees.
+    Loan Installments → Manage repayment schedules and track due payments.
+    Loan Reports → Generate reports on active and completed loans.
+
+📌 8. Payroll & Compensation
+
+💡 Purpose: Automate salary processing and payroll management.
+📌 Key Features:
+
+    Salary Structures → Define salary scales for different job roles.
+    Salary Setup & Deductions → Configure tax, insurance, and bonus structures.
+    Generate Payroll → Automate monthly salary payments.
+    Payslips & Tax Reports → Generate payslips and tax reports for employees.
+
+📌 9. HR Reports & Analytics
+
+💡 Purpose: Generate reports for HR decision-making and compliance tracking.
+📌 Key Features:
+
+    Employee Performance Reports → Evaluate staff performance trends.
+    Payroll & Salary Reports → Track payroll expenses over time.
+    Leave & Attendance Reports → Analyze attendance patterns.
+    Recruitment Insights → Track hiring trends and candidate sources.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

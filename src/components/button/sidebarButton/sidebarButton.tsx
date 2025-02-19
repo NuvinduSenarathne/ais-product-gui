@@ -1,29 +1,24 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import styles from "./sidebarButton.module.css"; 
 
 interface SidebarButtonProps {
   label: string;
-  iconSrc: string;
+  icon: string;
   hasSubMenu?: boolean;
   subMenuItems?: { label: string; onClick: () => void }[];
 }
 
-const SidebarButton: React.FC<SidebarButtonProps> = ({ label, iconSrc, hasSubMenu = false, subMenuItems = [] }) => {
+const SidebarButton: React.FC<SidebarButtonProps> = ({ label, icon, hasSubMenu = false, subMenuItems = [] }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <div className={styles.sidebarButtonContainer}>
       <button className={styles.sidebarButton} onClick={() => hasSubMenu && setIsExpanded(!isExpanded)}>
-        <div className={styles.sideButtonLogo}>
-          <Image src={iconSrc} alt="icon" fill />
-        </div>
+        <i className={`bi ${icon} ${styles.inputIcon}`}></i>
         <span>{label}</span>
         {hasSubMenu && (
           <span className={`${styles.arrow} ${isExpanded ? styles.rotated : ""}`}>
-            <div className={styles.arrowLogo}>
-            <Image src="/assets/icon/arrow.png" alt="icon" fill />
-            </div>
+            <i className={`bi bi-chevron-right ${styles.inputIcon}`}></i>
           </span>
         )}
       </button>

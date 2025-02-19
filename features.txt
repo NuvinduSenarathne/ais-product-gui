@@ -1,0 +1,143 @@
+1. Dashboard
+
+    Overview (Bookings, Revenue, Occupancy Rate, Housekeeping Status)
+    Analytics & Reports
+
+2. Reservations & Bookings
+
+    New Booking
+    Booking Calendar
+    Check-in / Check-out
+    Booking History
+    Cancellations & Refunds
+
+3. Guest Management
+
+    Guest Profiles
+    Loyalty & Memberships
+    Special Requests
+    Feedback & Reviews
+
+4. Room & Housekeeping Management
+
+    Room Availability
+    Housekeeping Status
+    Maintenance Requests
+    Room Allocation
+
+5. Staff & Employee Management
+
+    Employee Profiles
+    Work Schedules
+    Payroll Management
+    Shift Management
+
+6. Billing & Payments
+
+    Invoices & Receipts
+    Payment Methods (Credit, Cash, UPI, etc.)
+    Tax & Discounts
+    Refund Processing
+
+7. Inventory & Supplies Management
+
+    Stock Levels (Food, Linen, Toiletries, etc.)
+    Vendor Management
+    Purchase Orders
+
+8. Restaurant & Services
+
+    Restaurant Orders & Billing
+    Room Service Requests
+    Spa, Gym, and Other Facilities
+    Special Packages
+
+9. Marketing & Promotions
+
+    Discounts & Offers
+    Email & SMS Campaigns
+    Customer Engagement
+
+10. Reports & Analytics
+
+    Revenue Reports
+    Occupancy Reports
+    Guest Feedback Reports
+    Housekeeping Reports
+
+11. Settings & Configurations
+
+    User Roles & Permissions
+    System Settings
+    Hotel Policies
+    Integrations (Payment Gateway, CRM, POS, etc.)
+
+12. Help & Support
+
+    FAQs & Documentation
+    Live Chat / Ticket Support
+    Contact Support
+
+
+
+
+
+11. Online Booking & Channel Management
+
+    Integration with OTAs (Booking.com, Agoda, Expedia)
+    Hotel website booking engine
+    Multi-channel rate management
+
+12. Guest Self-Service Portal
+
+    Online check-in/check-out
+    Digital room key access (mobile app)
+    Service requests & concierge chatbot
+
+13. Multi-Property Management (if you expand to multiple hotels)
+
+    Centralized administration for multiple hotels
+    Shared inventory & booking management
+    Cross-hotel guest profiles
+
+14. Loyalty & Rewards Program
+
+    Tier-based membership system
+    Points earning & redemption
+    Special discounts & VIP perks
+
+15. Housekeeping & Maintenance Management
+
+    Automated room cleaning schedules
+    Staff task assignments & tracking
+    Equipment & infrastructure maintenance logs
+
+16. Legal & Compliance Management
+
+    Local & international hotel regulations compliance
+    GDPR & data protection policies
+    Guest verification & KYC integration
+
+17. Digital Marketing & Promotions
+
+    Email & SMS campaigns for offers
+    Social media & website integration
+    Seasonal & personalized promotions
+
+18. Guest Feedback & Reputation Management
+
+    Online review tracking & responses
+    Sentiment analysis for guest feedback
+    Complaint resolution & service improvement
+
+19. Emergency & Disaster Management
+
+    Fire & safety protocols
+    Emergency alert system for guests & staff
+    Evacuation planning & reporting
+
+20. AI-Powered Personalization & Automation
+
+    AI-driven pricing optimization
+    Chatbots for guest queries
+    Automated upselling & personalized recommendations

@@ -1,0 +1,97 @@
+.userWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.userDropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    min-width: max-content;
+    border-radius: 6px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.userDropdown.open {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.menuItem {
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.menuItem:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.userContainer {
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #898FA2;
+    padding: 10px;
+}
+
+.userContainer div {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Condensed", serif;
+}
+
+.userImage {
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.userNameHolder {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.userRoleHolder {
+    font-size: 12px;
+}
+
+.userMenu {
+    width: 100%;
+}
+
+.userMenu button {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    background-color: transparent;
+    color: #292F42;
+    font-family: "Roboto Condensed", serif;
+    border: none;
+    padding: 5px 8px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.userMenu button:hover {
+    background-color: whitesmoke;
+}
+
+.inputIcon {
+    font-size: 1.2rem;
+}

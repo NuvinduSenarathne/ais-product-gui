@@ -1,0 +1,178 @@
+.pageTitle {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-family: "Roboto Condensed", serif;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.listViewBtnHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+    font-family: "Ubuntu", serif;
+  }
+  
+  .listViewBtnHolder .start {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+  }
+  
+  .listViewBtnHolder .end {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .listViewBtnHolder button {
+    height: 36px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    gap: 8px;
+    border-radius: 5px;
+  }
+  
+  .listViewBtnHolder .btnLogoContainer {
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+  
+  .btnType1 {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+  }
+  
+  .btnType1:hover {
+    background-color: #aab0c5;
+    transition: 0.3s ease-in;
+  }
+  
+  .btnType2 {
+    background-color: #ff1100;
+    color: white;
+  }
+  
+  .btnType2:hover {
+    background-color: #d30f01;
+    transition: 0.3s ease-in;
+  }
+  
+  .btnType3 {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .btnType3:hover {
+    background-color: #014ea0;
+    transition: 0.3s ease-in;
+  }
+  
+  .searchContainer {
+    width: 250px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 10px;
+  }
+  
+  .searchIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+  }
+  
+  .searchInput {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  
+  .tableContainer {
+    width: 100%;
+    padding: 10px 0px;
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    border-radius: 5px;
+  }
+  
+  .table th, .table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .table th {
+    padding-bottom: 15px;
+  }
+  
+  .table th input {
+    cursor: pointer;
+  }
+  
+  .table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .sortableHeader {
+    cursor: pointer;
+    display: table-cell;
+    white-space: nowrap;
+    outline: none;
+    user-select: none;
+  }
+  
+  .sortableHeaderContext {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sortableHeader span {
+    height: 20px;
+  }
+  
+  .sortIconWrapper {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+  
