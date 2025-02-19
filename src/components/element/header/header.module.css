@@ -1,0 +1,107 @@
+.cPanelHeader {
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #292F42;
+}
+
+.cPanelHeader .start {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+  
+.cPanelHeader .middle {
+    width: 0%;
+}
+
+.cPanelHeader .end {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.userContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userContainer div {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Condensed", serif;
+}
+
+.userImage {
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.userNameHolder {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.userRoleHolder {
+    font-size: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .cPanelHeader  {
+        background-color: #292e32;
+        color: #898FA2;
+    }
+    
+    .userImage {
+        border: 2px solid #898FA2;
+    }
+}
+
+@media only screen and (max-width: 1300px), (max-height: 600px) {
+    .cPanelHeader {
+        padding: 5px 12px;
+    }
+      
+    .userImage {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+      
+    .userNameHolder {
+        font-size: 14px;
+    }
+    
+    .userRoleHolder {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .userContainer div {
+        display: none;
+    }
+
+    .userImage {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 500px), (max-height: 400px) {
+    .cPanelHeader {
+        padding: 10px 15px;
+    }
+
+    .userContainer {
+        display: none;
+    }
+}
+
+    

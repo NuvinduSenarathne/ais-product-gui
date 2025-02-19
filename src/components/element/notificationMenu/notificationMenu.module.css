@@ -1,0 +1,90 @@
+.notificationWrapper {
+    position: relative;
+    display: inline-block;
+}
+  
+.notificationDropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: max-content;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    visibility: hidden;
+    z-index: 100;
+}
+  
+.notificationDropdown.open {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+  
+.notificationHeader {
+    width: 320px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px 6px 0px 0px;
+    font-family: "Roboto Condensed", serif;
+    background: #898FA2;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+}
+  
+.notificationList {
+    max-height: 400px;
+    overflow-y: auto;
+}
+  
+.notificationHeader {
+    width: 320px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #898FA2;
+    font-family: "Roboto Condensed", serif;
+}
+  
+.notificationItem {
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Roboto Condensed", serif;
+    border-bottom: 1px solid #eee;
+}
+
+.notificationItem:hover {
+    background-color: whitesmoke;
+}
+  
+.notificationItem:last-child {
+    border-bottom: none;
+}
+  
+.notificationTitle {
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+.notificationContent {
+    font-size: 13px;
+    color: #555;
+}
+  
+.notificationTime {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+  
+.noNotifications {
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+}
+  

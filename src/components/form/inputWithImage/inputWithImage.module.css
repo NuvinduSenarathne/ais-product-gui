@@ -8,9 +8,10 @@
   background-color: rgb(230, 227, 227);
 }
 
-.inputImage {
-  margin-right: 5px;
-  border-radius: 50%;
+.inputIcon {
+  color: #555555;
+  font-size: 1.4rem;
+  margin-right: 10px;
 }
 
 .inputField {
@@ -30,11 +31,8 @@
     background-color: #555555;
   }
   
-  .inputImage {
-    margin-right: 5px;
-    border-radius: 50%;
+  .inputIcon {
     color: white;
-    fill: white;
   }
   
   .inputField {
@@ -45,17 +43,14 @@
 
   
 @media only screen and (max-width: 1300px), (max-height: 600px) {
-  
   .inputContainer {
     height: 40px;
     padding: 1px 6px;
   }
 
-  .inputImage {
-    margin-right: 5px;
-    border-radius: 50%;
-    max-width: 22px;
-    max-height: 22px;
+  .inputIcon {
+    font-size: 1.1rem;
+    margin-left: 10px;
   }
   
   .inputField {
@@ -63,6 +58,5 @@
     padding: 2px 8px;
     border-radius: 5px;
     font-family: "Ubuntu", serif;
-  }
-    
+  } 
 }

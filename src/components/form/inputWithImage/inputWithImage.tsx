@@ -1,20 +1,18 @@
-import Image from "next/image";
 import styles from "./inputWithImage.module.css";
 
 interface InputWithImageProps {
   type: string;
-  imageUrl: string;
+  icon: string;
   placeholder: string;
 }
 
-const InputWithImage: React.FC<InputWithImageProps> = ({ type, imageUrl, placeholder }) => {
+const InputWithImage: React.FC<InputWithImageProps> = ({ type, icon, placeholder }) => {
   return (
     <div className={styles.inputContainer}>
-      <Image src={imageUrl} height={26} width={26} alt="Input With Image Icon" className={styles.inputImage} />
+      <i className={`bi ${icon} ${styles.inputIcon}`}></i>
       <input type={type} placeholder={placeholder} className={styles.inputField} />
     </div>
   );
 };
 
 export default InputWithImage;
-

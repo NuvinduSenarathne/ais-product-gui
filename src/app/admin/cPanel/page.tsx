@@ -1,12 +1,13 @@
-"use client";
+"use client"
 
-import Table from "@/components/element/table/table";
+import NotificationDropdown from "@/components/element/notificationMenu/notificationMenu";
+import UserMenu from "@/components/element/userMenu/userMenu";
 
 
-export default function Dashboard() {
+export default function Home() {
   return (
-      <div>
-        <Table />
-      </div>
+    <div style={{ padding: "50px" }}>
+      <NotificationDropdown />
+    </div>
   );
 }

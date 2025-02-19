@@ -1,0 +1,165 @@
+.sidebar {
+    background-color: #292F42;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.sidebarClosed {
+    width: 0px;
+}
+  
+.sidebarOpen {
+    width: 280px;
+}
+
+.sidebarHeader {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.sidebarHeader .imageWrapper {
+    width: 85px;
+    height: 85px;
+    position: relative;
+}
+  
+.sidebarHeader .title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto Condensed", serif;
+    color: #D9AF65;
+}
+
+.sidebarHeader .subTitle {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Roboto Condensed", serif;
+    color: white;
+}
+
+.sidebarBody {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100vh - 105px);
+}
+
+.sidebarBody .bodyContext {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sidebarBody .bodyContext .title {
+    color: #898FA2;
+    font-size: 16px;
+    font-family: "Oswald", serif;
+    margin-bottom: 10px;
+}
+
+.sidebarOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.sidebarOverlayActive {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .sidebar {
+        background-color: #212529;
+    }
+}
+
+@media only screen and (max-width: 1300px), (max-height: 600px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 280px;
+        height: 100vh;
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .sidebarOpen {
+        left: 0;
+    }
+
+    .sidebarClosed {
+        left: -100%;
+    }
+
+    .sidebarHeader {
+        width: 280px;
+        margin-bottom: 10px;
+    }
+
+    .sidebarHeader .imageWrapper  {
+        width: 50px;
+        height: 50px;
+    }
+      
+    .sidebarHeader .title  {
+        font-size: 14px;
+    }
+    
+    .sidebarHeader .subtitle {
+        font-size: 10px;
+    }
+    
+    .sidebarBody {
+        max-height: calc(100vh - 60px);
+    }
+
+    .sidebarBody .bodyContext .title {
+        font-size: 14px;
+    }
+
+    .sidebarOverlay {
+        display: none;
+    }
+
+    .sidebarOverlayActive {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+
+}
+
+@media only screen and (max-width: 500px), (max-height: 400px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    .sidebarHeader {
+        width: 250px;
+    }
+
+    .sidebarBody {
+        width: 250px;
+    }
+}
+
+    

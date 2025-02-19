@@ -11,6 +11,7 @@
   "dependencies": {
     "@mui/material": "^6.4.3",
     "@mui/x-data-grid": "^7.26.0",
+    "bootstrap-icons": "^1.11.3",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

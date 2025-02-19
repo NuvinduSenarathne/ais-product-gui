@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./styles.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export const metadata: Metadata = {
   title: "Hotel Management System | Grand Amanee",

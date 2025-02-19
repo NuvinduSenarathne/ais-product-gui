@@ -28,7 +28,6 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
           <div className={styles.formLogoContainer}>
             <Image src="/assets/logo/grand_amanee.png" fill alt="Company Logo" />
           </div>
-          <h3>Control Panel</h3>
           {children}
         </div>
       </div>

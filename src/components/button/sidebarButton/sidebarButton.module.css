@@ -3,6 +3,7 @@
 }
 
 .sidebarButton {
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -46,10 +47,11 @@
 .subMenu {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out, padding-bottom  0.4s ease-in-out, visibility 0.4s ease-out;
     opacity: 0;
     padding-left: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 0;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -58,7 +60,10 @@
 .subMenu.open {
     max-height: 200px;
     opacity: 1;
+    padding-bottom: 10px;
+    visibility: visible;
 }
+
 
 .subButton {
     display: block;
@@ -96,6 +101,9 @@
     
     .subMenu {
         padding-left: 36px;
+    }
+
+    .subMenu.open {
         padding-bottom: 8px;
     }
     
