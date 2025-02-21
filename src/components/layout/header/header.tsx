@@ -2,11 +2,10 @@
 
 import React from "react";
 import styles from "./header.module.css";
-import Image from "next/image";
-import Icon from "@/components/element/icon/icon";
-import UserMenu from "../userMenu/userMenu";
-import NotificationMenu from "../notificationMenu/notificationMenu";
-import ChatMenu from "../chatMenu/chatMenu";
+import Icon from "@/components/ui/icon/icon";
+import UserMenu from "../../menus/userMenu/userMenu";
+import NotificationMenu from "../../menus/notificationMenu/notificationMenu";
+import ChatMenu from "../../menus/chatMenu/chatMenu";
 
 interface HeaderProps {
   toggleSidebar: () => void;

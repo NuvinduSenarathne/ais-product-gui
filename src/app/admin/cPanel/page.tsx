@@ -1,10 +1,8 @@
 "use client"
 
-import NotificationDropdown from "@/components/element/notificationMenu/notificationMenu";
-import UserMenu from "@/components/element/userMenu/userMenu";
+import NotificationDropdown from "@/components/menus/notificationMenu/notificationMenu";
 
-
-export default function Home() {
+export default function Dashboard() {
   return (
     <div style={{ padding: "50px" }}>
       <NotificationDropdown />

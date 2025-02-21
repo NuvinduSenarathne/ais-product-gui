@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import InputWithImage from "@/components/form/inputWithImage/inputWithImage";
+import InputWithImage from "@/components/ui/inputWithImage/inputWithImage";
 import styles from "./auth.module.css";
 
 export default function AdminLogin() {

@@ -3,7 +3,7 @@
 import React from "react";
 import styles from "./sidebar.module.css";
 import Image from "next/image";
-import SidebarButton from "@/components/button/sidebarButton/sidebarButton";
+import SidebarButton from "@/components/ui/sidebarButton/sidebarButton";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -20,31 +20,31 @@ export default function Sidebar({ isOpen, closeSidebar }: SidebarProps) {
         {
           label: "Dashboard",
           icon: "bi-house-door-fill",
-          subMenuItems: []
+          path: "/admin/cPanel/",
         },
         {
           label: "User Management",
           icon: "bi-person-lines-fill",
           subMenuItems: [
-            { label: "Add User", onClick: () => console.log("Occupancy Rate clicked") },
-            { label: "Manage User", onClick: () => console.log("Customer Trends clicked") },
-            { label: "Add User Roles", onClick: () => console.log("Peak Booking Times clicked") },
-            { label: "Manage User Roles", onClick: () => console.log("Occupancy Rate clicked") },
-            { label: "Activity Logs", onClick: () => console.log("Customer Trends clicked") },
+            { label: "Add User", path: "/admin/cPanel/main/users/add" },
+            { label: "Manage User", path: "/admin/cPanel/main/users/manage" },
+            { label: "Add User Roles", path: "/admin/cPanel/main/roles/add" },
+            { label: "Manage User Roles", path: "/admin/cPanel/main/roles/manage" },
+            { label: "Activity Logs", path: "/admin/cPanel/main/activity-logs" },
           ],
         },
         {
-          label: "Departments & Teams",
-          icon: "bi-people-fill",
+          label: "Department Management",
+          icon: "bi-buildings-fill",
           subMenuItems: [
-            { label: "Add Department", onClick: () => console.log("Add Department clicked") },
-            { label: "Manage Departments", onClick: () => console.log("Manage Departments clicked") },
-            { label: "Add Division", onClick: () => console.log("Add Division clicked") },
-            { label: "Manage Divisions", onClick: () => console.log("Manage Divisions clicked") },
+            { label: "Add Department", path: "/admin/cPanel/main/departments/add" },
+            { label: "Manage Department", path: "/admin/cPanel/main/departments/manage" },
+            { label: "Add Division", path: "/admin/cPanel/main/divisions/add" },
+            { label: "Manage Division", path: "/admin/cPanel/main/divisions/manage" },
           ],
         }
       ],
-    }
+    },
   ];
 
   return (
@@ -59,17 +59,22 @@ export default function Sidebar({ isOpen, closeSidebar }: SidebarProps) {
             <div className={styles.subTitle}>Hotel Management System</div>
           </div>
         </div>
+
         <div className={styles.sidebarBody}>
-          {modules.map((module) => (
-            <div key={module.section} className={styles.bodyContext}>
+          {modules.map((module, moduleIndex) => (
+            <div key={`module-${module.section}-${moduleIndex}`} className={styles.bodyContext}>
               <div className={styles.title}>{module.section}</div>
-              {module.items.map((item) => (
-                <div key={item.label} className={styles.buttonContainer}>
+              {module.items.map((item, itemIndex) => (
+                <div key={`item-${item.label}-${itemIndex}`} className={styles.buttonContainer}>
                   <SidebarButton
                     label={item.label}
                     icon={item.icon}
-                    hasSubMenu={item.subMenuItems?.length > 0}
-                    subMenuItems={item.subMenuItems}
+                    path={item.path}
+                    hasSubMenu={!!item.subMenuItems}
+                    subMenuItems={item.subMenuItems?.map((subItem, subIndex) => ({
+                      ...subItem,
+                      key: `subItem-${subItem.label}-${subIndex}`,
+                    }))}
                   />
                 </div>
               ))}

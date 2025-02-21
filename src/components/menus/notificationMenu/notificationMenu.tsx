@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./notificationMenu.module.css";
 import Image from "next/image";
-import Icon from "../icon/icon";
+import Icon from "../../ui/icon/icon";
 
 interface Notification {
   title: string;

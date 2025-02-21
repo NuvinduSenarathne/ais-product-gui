@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import styles from "./cPanel.module.css";
-import Sidebar from "@/components/element/sidepanel/sidepanel";
-import Header from "@/components/element/header/header";
+import Sidebar from "@/components/layout/sidepanel/sidepanel";
+import Header from "@/components/layout/header/header";
 
 export default function ControlPanelLayout({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true);

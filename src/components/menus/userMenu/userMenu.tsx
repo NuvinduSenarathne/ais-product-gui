@@ -44,7 +44,7 @@ export default function UserMenu() {
         </div>
 
         {options.map((option, index) => (
-          <div className={styles.userMenu}>
+          <div key={index} className={styles.userMenu}>
             <button>
               <i className={`bi ${option.icon} ${styles.inputIcon}`}></i>
               <span>{option.label}</span>

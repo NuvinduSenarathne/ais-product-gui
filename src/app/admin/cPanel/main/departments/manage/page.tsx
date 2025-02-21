@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import styles from "..//hr.module.css";
+import styles from "../../main.module.css";
 import Image from "next/image";
 
 
