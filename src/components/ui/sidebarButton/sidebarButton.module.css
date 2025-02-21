@@ -23,10 +23,8 @@
     border-radius: 6px;
 }
 
-.sideButtonLogo {
-    width: 26px;
-    height: 26px;
-    position: relative;
+.menuIcon {
+    font-size: 1.2rem;
 }
 
 .arrowLogo {

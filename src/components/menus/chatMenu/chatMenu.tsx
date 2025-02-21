@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./chatMenu.module.css";
 import Image from "next/image";
-import Icon from "../icon/icon";
+import Icon from "../../ui/icon/icon";
 
 interface ChatMessage {
   senderImage: string;

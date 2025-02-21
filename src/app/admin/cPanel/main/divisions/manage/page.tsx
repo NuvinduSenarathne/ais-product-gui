@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import styles from "..//hr.module.css";
+import styles from "../../main.module.css";
 import Image from "next/image";
 
 
-export default function AttendanceOverview() {
+export default function ManageDivisions() {
 
   const [searchTerm, setSearchTerm] = useState("");
     const [selectedRows, setSelectedRows] = useState<number[]>([]);
